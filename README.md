@@ -1,3 +1,5 @@
+# Sorry for my English.
+
 # simple2d-anim
 it is simple 2d anim lib for simple2d: https://github.com/simple2d/simple2d
 
@@ -6,6 +8,26 @@ it is simple 2d anim lib for simple2d: https://github.com/simple2d/simple2d
 ```bash
 cc <sources or object files> `simple2d --libs` -pthread -o <output>
 ```
+
+## functions
+
+all functions has MK_ prefix.
+
+`struct anim *MK_create_anim(S2D_Sprite *sp);`
+
+`void MK_free_anim(struct anim *anm);`
+
+`void MK_add_anim_clip(anim_t *anm, rectangle rect);`
+
+`void MK_start_anim(struct anim *anm, int period);`
+
+`void MK_stop_anim(struct anim *anm);`
+
+`void MK_pause_anim(struct anim *anm);`
+
+`void MK_resume_anim(struct anim *anm);`
+
+`void MK_change_anim_period(struct anim *anm, int period);`
 
 ## example:
 
