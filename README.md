@@ -51,7 +51,11 @@ int main(int argc, char *argv[]){
     WIN->on_key = on_key;
 
     S2D_Show(WIN);
-
+    
+    
+    MK_free_anim(ANIM);
+    MK_free_anim(ANIM2);
+    S2D_FreeSprite(sprite);
     S2D_FreeWindow(WIN);
     return 0;
 }
